@@ -129,45 +129,6 @@ No Firestore rules file is present in this repository. Client-side route guards 
    ```bash
    npm run build
    ```
-
----
-
-## 7. How to Use the Key Features
-
-### How to Add a Student
-1. Sign in with a Firebase account whose `users/{uid}` profile has the `admin` role.
-2. Go to **Students** from the sidebar or click **+ Add Student** on the dashboard.
-3. Fill in the student demographic information and initial annual fee.
-4. Click **Save Student**. The student roster and the dashboard counter will automatically increment.
-
-### How to Add a Teacher
-1. Sign in with an administrator account.
-2. Go to **Teachers** from the sidebar and click **+ Add Teacher**.
-3. Enter the teacher profile, email, subject, and assigned class.
-4. Create the teacher's Firebase Auth account and matching `users/{uid}` role profile through a trusted administrative process.
-
-### How to Add / Configure Classes
-1. Go to **Classes** from the sidebar and click **+ Add Class**.
-2. Specify the Grade name (e.g. `Grade 11`), divisions (`A, B`), and choose an assigned teacher.
-3. Click **Save Class**.
-
-### How to Record Fee Payments
-1. Go to **Fees** from the sidebar.
-2. Locate the student using the search bar or class filter.
-3. Click **Record Payment**, enter the installment amount and payment method (Cash, UPI, etc.).
-4. Click **Confirm & Save**. The paid and pending amounts recalculate automatically, and status updates to `Paid` or `Partial`.
-
-### How to Mark Attendance (Teacher / Admin)
-1. Sign in with a Firebase account with the `teacher` or `admin` role.
-2. Navigate to **Attendance**.
-3. Select the Grade, Division, and Date.
-4. Use **Mark All Present** or toggle individuals to Absent.
-5. Click **Save Attendance**.
-
-### How to View Student Progress (Student / Parent Portal)
-1. Sign in at `/student/login` with a Firebase account whose role is `student` and whose `linkedId` matches the student's `studentId`.
-2. View fee clearance status, subject exam marks, teacher observations, and attendance history in a read-only dashboard.
-
 ---
 
 ## 8. Deployment
